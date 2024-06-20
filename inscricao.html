@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Caravan - Contato</title>
+  <title>Caravan - incrição</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -67,7 +67,7 @@
           <a class="nav-link" href="./planos.html">Planos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="./contato.html">Contato</a>
+          <a class="nav-link" href="./contato.html">Contato</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" data-toggle="modal" data-target="#modallogin">Login</a>
@@ -82,118 +82,68 @@
 
   <section class="container">
     <div class="my-5 text-center">
-      <spand-block">POSSUI ALGUMA DÚVIDA?
+      <spand-block">PROGRAME A VIAGEM DO SEU SONHO
         </span>
-        <h1 class="display-4 text-primary">Fale Conosco
+        <h1 class="display-4 text-primary">INSCREVA-SE
         </h1>
     </div>
 
     <div class="row">
-      <div class="col-lg  mb-5">
-        <form class="bg-light p-4 box-shadow  rounded">
-          <div class="form-group">
-            <label for="clienteNome">Nome</label>
-            <input type="text" class="form-control" id="clienteNome">
+
+      <form class="col-lg-6">
+        <div class="form-row">
+
+          <div class="form-group col-md-6">
+            <label for="inputNome">Nome</label>
+            <input type="text" id="inputNome" class="form-control" placeholder="Nome Completo">
           </div>
 
-          <div class="form-group">
-            <label for="clienteEmail">Email</label>
-            <input type="text" class="form-control" id="clienteEmail">
+          <div class="form-group col-md-6">
+            <label for="inputCpf">CPF</label>
+            <input type="text" id="inputCpf" class="form-control" placeholder="xxx.xxx.xxx-xx">
           </div>
 
-          <div class="form-group">
-            <label for="clienteMensagem">Mensagem</label>
-            <textarea class="form-control" id="clienteMensagem" rows="3"></textarea>
+          <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Seu Email">
           </div>
-          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-        </form>
-      </div>
 
-      <div class="col-lg">
-        <h2 class="h6">NOSSO ENDEREÇO</h2>
-        <a href="#"><img class="img-fluid box-shadow rounded mb-4" src="img/mapa.png" alt="endereço da empresa"></a>
-
-        <h2 class="h6">DADOS DE CONTATO</h2>
-        <ul class="list-unstyled text-secondary">
-          <li><a class="text-secondary" href="mailto:lucasviniciusfurquim@gmail.com">lucasviniciusfurquim@gmail.com</a></li>
-          <li><a class="text-secondary" href="tel:+5515997679644">(15) 997679644</a></li>
-          <li>De Seg a Sex. das 8h as 20h</li>
-        </ul>
-
-        <h2 class="h6">Redes Sociais</h2>
-        <ul class="list-unstyled">
-          <li style="max-width: 140px;">
-            <a class="btn btn-sm btn-outline-secondary btn-block mb-2" href="#">Facebook</a>
-            <a class="btn btn-sm btn-outline-secondary btn-block mb-2" href="#">Instagram</a>
-            <a class="btn btn-sm btn-outline-secondary btn-block mb-2" href="#">Youtube</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-  </section>
-
-  <section class="container">
-
-    <div class="my-5 text-center">
-      <spand-block">AINDA ESTÁ COM DÚVIDAS?
-        </span>
-        <h2 class="display-4 text-primary">Perguntas Frequentes
-        </h2>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-md-6" id="perguntasFrequentes" data-children=".pergunta">
-        <div class="pergunta py-2">
-          <a data-toggle="collapse" href="#resposta0" aria-expanded="false" aria-controls="collapseThree">→ É possível cancelar a viagem?</a>
-          <div class="collapse show" data-parent="#perguntasFrequentes" role="tabpanel" id="resposta0" aria-labelledby="headingThree">
-            <p>Sim, todas as Viagem são possiveis ser canceladas com 3 dias de antecedencia sempre com aviso previo</p>
+          <div class="form-group col-md-6">
+            <label for="inputSenha">Senha</label>
+            <input type="password" id="inputSenha" class="form-control" placeholder="Senha de Acesso">
           </div>
+
+          <div class="form-group col-12">
+            <label for="inputEndereco">Endereço</label>
+            <input type="text" id="inputEndereco" class="form-control" placeholder="Rua, Numero, Bairro, e Bairro">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="inputCidade">Cidade</label>
+            <input type="text" id="inputCidade" class="form-control">
+          </div>
+
+          <div class="form-group col-md-3 col-6">
+            <label for="inputEstado">Estado</label>
+            <select id="inputEstado" class="form-control">
+              <option selected>Estado</option>
+              <option>São Paulo</option>
+              <option>Rio de Janeiro</option>
+              <option>Bahia</option>
+              <option>Paraná</option>
+              <option>Ceará</option>
+              <option>Acre</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-3 col-6">
+            <label for="inputCep">Cep</label>
+            <input type="text" id="inputCep" class="form-control" placeholder="xxxxx-xxx">
+          </div>
+
         </div>
+      </form>
 
-        <div class="dropdown-divider"></div>
-
-        <div class="pergunta py-2">
-          <a data-toggle="collapse" href="#resposta1" aria-expanded="false" aria-controls="collapseThree">→ Qual a garantia que tenho se perder o voo?</a>
-          <div class="collapse" data-parent="#perguntasFrequentes" role="tabpanel" id="resposta1" aria-labelledby="headingThree">
-            <p>Garantimos um segundo voo para o mesmo lugar com pequenas paradas</p>
-          </div>
-        </div>
-
-        <div class="dropdown-divider"></div>
-
-        <div class="pergunta py-2">
-          <a data-toggle="collapse" href="#resposta2" aria-expanded="false" aria-controls="collapseThree">→ Qual a principal forma de viagem?</a>
-          <div class="collapse" data-parent="#perguntasFrequentes" role="tabpanel" id="resposta2" aria-labelledby="headingThree">
-            <p>Avião e possui modelos em cruzeiros e embarcações caso deseje aproveitar a viagem</p>
-          </div>
-        </div>
-
-        <div class="dropdown-divider"></div>
-
-        <div class="pergunta py-2">
-          <a data-toggle="collapse" href="#resposta3" aria-expanded="false" aria-controls="collapseThree">→ Qual o melhor destino de viagem?</a>
-          <div class="collapse" data-parent="#perguntasFrequentes" role="tabpanel" id="resposta3" aria-labelledby="headingThree">
-            <p>Muitos passageiros escolhem lugares frios como Canadá e pontos do Polo Norte para aproveitar um frio</p>
-          </div>
-        </div>
-
-        <div class="dropdown-divider"></div>
-
-        <div class="pergunta py-2">
-          <a data-toggle="collapse" href="#resposta4" aria-expanded="false" aria-controls="collapseThree">→ Vocês dão descontos para grupos grandes?</a>
-          <div class="collapse" data-parent="#perguntasFrequentes" role="tabpanel" id="resposta4" aria-labelledby="headingThree">
-            <p>Sim, Temos o Pacote Familia onde inclui 4 adultos e 2 crianças ou o Pacote Excursão onde inclui 6 adultos e 4 crianças <span class="pequeno">(*é possivel adicionar mais adultos pagando o valor separadamente*) </span></p>
-          </div>
-        </div>
-
-        <div class="dropdown-divider"></div>
-      </div>
-    </div>
-
-    <div class="text-center my-4">
-      <p class="small m-1">FALE CONOSCO PARA MAIS DÚVIDAS</p>
-      <a class="btn btn-primary btn-lg" href="contato.html">Entre Em Contato</a>
     </div>
 
   </section>
